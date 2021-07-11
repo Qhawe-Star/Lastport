@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>index</title>
+
+        </head>
+<style>
+
+body{
+    background-color: black;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 710px;
+  top: 0;
+  right: 0;
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url('pic3.jfif');
+  background-repeat: no-repeat;
+  background-size: 1600px;
+}
+
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(58, 51, 51);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+.siite-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.siite-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.siite-footer hr.small
+{
+  margin:20px 0
+}
+.siite-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.siite-footer a
+{
+  color:#737373;
+}
+.siite-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .siite-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .siite-footer
+  {
+    padding-bottom:0
+  }
+  .siite-footer .copyright-text,.siite-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.about{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about img{
+    padding-top: 80px;
+    border-radius: 80px;
+}
+.about p{
+    font-family: monospace;
+    font-size: larger;
+    color: ivory;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   color: blanchedalmond;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(23, 3, 31, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+
+
+
+
+
+
+.card {
+  width: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.card .content {
+  z-index: 2;
+  width: 1px;
+  position: absolute;
+  bottom: -100px;
+  transition: all 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+  min-height: 100px;
+  background: #111;
+}
+.card .image {
+  z-index: 1;
+  height: 1px;
+  padding-bottom: 350px;
+  text-align: center;
+}
+.card img {
+  height: 240px;
+  width: 280px;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+  border-radius: 90px;
+}
+
+.card:hover .content {
+  bottom: 0px;
+  color: #fff;
+}
+
+.card:hover .image img {
+  transform: scale(1);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .card {
+  width: 50%;
+  }
+  .card .content {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+  width: 100%;
+  }
+}
+
+
+p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+body {
+  background: black;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Qhawe Ntinzi</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact2.html">Contact</a> 
+        <a href="download.html">Download My Work</a>
+      
+
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">QHAWE N ☰</button>  
+     
+     
+        <a href="Mrq.jpg" class="card">
+          
+           
+          </div>
+          <div class="image">
+            <img src="Mrq.jpg" alt="picture of me" />
+            
+
+          </div>
+        </a><br><br>
+        <p style="color: white;"><br></p>
+         <br><br>
+        <div style="main">
+            <h2 class="line-1 anim-typewriter">Web Dev !</h2>
+          </div>
+       
+      <marquee style="color: white;">Software Programmer     Software Programmer     Software Programmer     Software Programmer      Software Programmer Software Programmer Software Programmer      Software Programmer       Software Programmer       Software Programmer       Software Programmer       Software Programmer      Software Programmer       Software Programmer      Software Programmer       Software Programmer       Software Programmer        Software Programmer       Software Programmer         Software Programmer        Software Programmer       Software Programmer       Software Programmer       Software Programmer       Software Programmer       Software Programmer       Software Programmer</marquee>
+
+         
+
+
+
+
+   <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+
+
+<footer class="siite-footer">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            
+            <li><a href="availability.html">Availability</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">Qhawe Ntinzi</a>.
+          </p>
+        </div>
+
+     </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+ 
+</body>            
+</html>
